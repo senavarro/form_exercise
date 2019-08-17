@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Dom exercise, events and functions</title>
+        <script type="text/javascript" src="form.js"></script>
+        <style>
+
+            #box_title{
+                text-align: center;
+            }
+            
+            .box{
+                width: 200px;
+                height: 250px;
+                float: left;
+                margin: 20px;
+            }
+            .dashed{
+                border: 3px dashed black;
+                padding: 5px;
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Dom exercise, events and functions</h1>
+        <div class="box">
+            <form action="#" method="post" id="form" onsubmit="return false;">
+
+                <label for="name">Name</label> </br>
+                <input type="text" id="name"  placeholder="Insert your name"> </br>
+
+                <label for="surname">Surname</label> </br>
+                <input type="text" id="surname" placeholder="Insert your surname"> </br>
+
+                <label for="age">Age</label> </br>
+                <input type="number" id="age"  placeholder="Insert your age"> </br>
+
+                <input type="submit" id="submit">
+            </form>
+        </div>
+
+        <div class="box dashed">
+            <h3 id="box_title">User info</h3>
+            <hr>
+        </div>
+    </body>
+</html>
