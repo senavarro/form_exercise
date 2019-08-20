@@ -21,6 +21,18 @@
                 padding: 5px;
                 text-align: center;
             }
+
+            #error_name{
+                 color: red;
+            }
+
+            #error_surname{
+                 color: red;
+            }
+
+            #error_age{
+                 color: red;
+            }
             
         </style>
     </head>
@@ -31,12 +43,15 @@
 
                 <label for="name">Name</label> </br>
                 <input type="text" id="name"  placeholder="Insert your name"> </br>
+                <span id="error_name"></span>
 
                 <label for="surname">Surname</label> </br>
                 <input type="text" id="surname" placeholder="Insert your surname"> </br>
+                <span id="error_surname"></span>
 
                 <label for="age">Age</label> </br>
                 <input type="number" id="age"  placeholder="Insert your age"> </br>
+                <span id="error_age"></span>
 
                 <input type="submit" id="submit">
             </form>

@@ -13,7 +13,22 @@ window.addEventListener("load", ()=>{
 
         var name = document.querySelector("#name").value;
         var surname = document.querySelector("#surname").value;
-        var age = document.querySelector("#age").value;
+        var age = parseInt(document.querySelector("#age").value); //parseInt converts the value to an integer so we can use isNaN()
+
+        if(name.trim() == null || name.trim().length == 0){
+            document.querySelector("#error_name").innerHTML="Name field can't be empty!";
+            return false;
+        } //trim makes sure there is no space in front or after the input
+
+        if(surname.trim() == null || surname.trim().length == 0){
+            document.querySelector("#error_surname").innerHTML="Surname field can't be empty!";
+            return false;
+        }
+
+        if(age == null || age <= 0 || isNaN(age) ){
+            document.querySelector("#error_age").innerHTML="Age has to be more than 0!";
+            return false;
+        }
 
         box_dashed.style.display = "block"
 
